@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6aaf39c48316d5e03b47e861f0428ddf",
+    "content-hash": "459f295ad61303a74cb71a6e67a177b1",
     "packages": [
         {
             "name": "anourvalar/eloquent-serialize",
@@ -4649,6 +4649,85 @@
                 }
             ],
             "time": "2024-02-26T18:08:49+00:00"
+        },
+        {
+            "name": "solutionforest/filamentloginscreen",
+            "version": "0.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/solutionforest/FilamentLoginScreen.git",
+                "reference": "650324f5cbb73f72f97ab3b18b3b5303eb4a3681"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/solutionforest/FilamentLoginScreen/zipball/650324f5cbb73f72f97ab3b18b3b5303eb4a3681",
+                "reference": "650324f5cbb73f72f97ab3b18b3b5303eb4a3681",
+                "shasum": ""
+            },
+            "require": {
+                "filament/filament": "^3.0",
+                "php": "^8.1",
+                "spatie/laravel-package-tools": "^1.15.0"
+            },
+            "require-dev": {
+                "laravel/pint": "^1.0",
+                "nunomaduro/collision": "^7.9",
+                "nunomaduro/larastan": "^2.0.1",
+                "orchestra/testbench": "^8.0",
+                "pestphp/pest": "^2.1",
+                "pestphp/pest-plugin-arch": "^2.0",
+                "pestphp/pest-plugin-laravel": "^2.0",
+                "phpstan/extension-installer": "^1.1",
+                "phpstan/phpstan-deprecation-rules": "^1.0",
+                "phpstan/phpstan-phpunit": "^1.0",
+                "spatie/laravel-ray": "^1.26"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Solutionforest\\FilamentLoginScreen\\FilamentLoginScreenServiceProvider"
+                    ],
+                    "aliases": {
+                        "FilamentLoginScreen": "Solutionforest\\FilamentLoginScreen\\Facades\\FilamentLoginScreen"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Solutionforest\\FilamentLoginScreen\\": "src/",
+                    "Solutionforest\\FilamentLoginScreen\\Database\\Factories\\": "database/factories/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "alan",
+                    "email": "alan@solutionforest.net",
+                    "role": "Developer"
+                }
+            ],
+            "description": "This is my package filamentloginscreen",
+            "homepage": "https://github.com/solutionforest/filamentloginscreen",
+            "keywords": [
+                "filamentloginscreen",
+                "laravel",
+                "solutionforest"
+            ],
+            "support": {
+                "issues": "https://github.com/solutionforest/filamentloginscreen/issues",
+                "source": "https://github.com/solutionforest/filamentloginscreen"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/solutionforest",
+                    "type": "github"
+                }
+            ],
+            "time": "2024-05-03T16:48:38+00:00"
         },
         {
             "name": "spatie/color",

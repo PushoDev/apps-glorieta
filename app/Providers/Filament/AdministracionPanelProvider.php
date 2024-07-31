@@ -21,6 +21,7 @@ use Illuminate\View\Middleware\ShareErrorsFromSession;
 use Awcodes\LightSwitch\LightSwitchPlugin;
 use Awcodes\LightSwitch\Enums\Alignment;
 use Njxqlus\FilamentProgressbar\FilamentProgressbarPlugin;
+use Solutionforest\FilamentLoginScreen\Filament\Pages\Auth\Themes\Theme1\LoginScreenPage as LoginScreenPage;
 
 class AdministracionPanelProvider extends PanelProvider
 {
@@ -30,7 +31,7 @@ class AdministracionPanelProvider extends PanelProvider
             ->default()
             ->id('administracion')
             ->path('administracion')
-            ->login()
+            ->login(LoginScreenPage::class)
             ->colors([
                 'primary' => Color::Amber,
             ])
@@ -60,7 +61,7 @@ class AdministracionPanelProvider extends PanelProvider
             ])
             ->plugins([
                 LightSwitchPlugin::make()
-                    ->position(Alignment::BottomCenter)
+                    ->position(Alignment::TopRight)
                     ->enabledOn([
                         'auth.email',
                         'auth.login',
