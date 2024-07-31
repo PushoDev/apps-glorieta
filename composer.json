@@ -10,11 +10,14 @@
     "require": {
         "php": "^8.2",
         "awcodes/light-switch": "^1.0",
+        "bezhansalleh/filament-shield": "^3.2",
         "filament/filament": "^3.2",
         "laravel/framework": "^11.9",
         "laravel/tinker": "^2.9",
         "njxqlus/filament-progressbar": "^1.0",
-        "solutionforest/filamentloginscreen": "^0.0.1"
+        "solutionforest/filamentloginscreen": "^0.0.1",
+        "stechstudio/filament-impersonate": "^3.13",
+        "tomatophp/filament-users": "^1.0"
     },
     "require-dev": {
         "fakerphp/faker": "^1.23",

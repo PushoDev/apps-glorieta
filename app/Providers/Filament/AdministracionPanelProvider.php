@@ -22,6 +22,8 @@ use Awcodes\LightSwitch\LightSwitchPlugin;
 use Awcodes\LightSwitch\Enums\Alignment;
 use Njxqlus\FilamentProgressbar\FilamentProgressbarPlugin;
 use Solutionforest\FilamentLoginScreen\Filament\Pages\Auth\Themes\Theme1\LoginScreenPage as LoginScreenPage;
+use TomatoPHP\FilamentUsers\FilamentUsersPlugin;
+use BezhanSalleh\FilamentShield\FilamentShieldPlugin;
 
 class AdministracionPanelProvider extends PanelProvider
 {
@@ -72,6 +74,8 @@ class AdministracionPanelProvider extends PanelProvider
                         'auth.register',
                     ]),
                 FilamentProgressbarPlugin::make()->color('#F7DD48'),
+                FilamentUsersPlugin::make(),
+                FilamentShieldPlugin::make(),
             ]);
     }
 }
