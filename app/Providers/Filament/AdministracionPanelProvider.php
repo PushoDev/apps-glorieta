@@ -32,6 +32,8 @@ class AdministracionPanelProvider extends PanelProvider
             ->id('administracion')
             ->path('administracion')
             ->login(LoginScreenPage::class)
+            ->sidebarCollapsibleOnDesktop()  // Bars Collapsible
+            ->brandName('GV - GlorietaShop') // Name Projects
             ->colors([
                 'primary' => Color::Amber,
             ])
